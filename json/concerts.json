@@ -1,5 +1,13 @@
 [
     {
+        "title": "The Gas Station",
+        "date": "30 січня, початок - 20:00.",
+        "image": "../img/posters/30-01.jpg",
+        "description": "Концерт повним складом у супроводі гурту <a href=\"http://www.vk.com/not_clean_head\" target=\"_blank\" style=\"text-decoration: underline\" title=\"спільнота Вконтакте\">&#171;Not Clean Head&#187;</a>. вул. Джерельна 20,  ВХІД ВІЛЬНИЙ!.<br>Резервація столиків за телефонами:<br>098 0658091<br>063 9414653",
+        "city": "Львів",
+        "link": "#"
+    },
+    {
         "title": "Cadillac art-club",
         "date": "18 січня",
         "image": "../img/posters/18-01.jpg",
