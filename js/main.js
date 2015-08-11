@@ -4,17 +4,18 @@
   var elements = {
     concerts: {
       title: 'concerts',
-      titleUk: 'РљРѕРЅС†РµСЂС‚Рё',
+      titleUk: 'Концерти',
       template: function(data) {
         var template = '<div class="conc"><h1>' + data.title + '</h1> </div><main class="posts">';
         data.concerts.forEach(function(el) {
+          var className = el.link == 'nolink' ? 'nolink' : '';
           template += '<section class="single-date">' +
-            '<a href="' + el.link + '"  title="Р—СѓСЃС‚СЂС–С‡ Р’РєРѕРЅС‚Р°РєС‚С”" target="_blank" class="single-date-img-container">' +
+            '<a href="' + el.link + '"  title="Зустріч Вконтактє" target="_blank" class="' + className + '">' +
               '<img src="' + el.image + '" alt="' + el.title + '" class="single-date-img">' +
             '</a>' +
               '<span class="concert-date">' + el.date + '</span>' +
               '<h2 class="single-date-h2">' +
-                '<a href="' + el.link + '" title="Р—СѓСЃС‚СЂС–С‡ Р’РєРѕРЅС‚Р°РєС‚С”"  target="_blank">' +
+                '<a href="' + el.link + '" title="Зустріч Вконтактє" class="' + className + '" target="_blank">' +
                   '&#171;' + el.title + '&#187;' +
                 '</a>' +
               '</h2>' +
@@ -28,7 +29,7 @@
     },
     about: {
       title: 'about',
-      titleUk: 'РџСЂРѕ РЅР°СЃ',
+      titleUk: 'Про нас',
       template: function(data) {
         var template = '<div class="conc"><h1>' + data.title + '</h1> </div><main class="posts">' +
           '<p class="about-par">' +
@@ -49,7 +50,7 @@
     },
     music: {
       title: 'music',
-      titleUk: 'РњСѓР·РёРєР°',
+      titleUk: 'Музика',
       template: function(data) {
         var template = '<div class="conc"><h1>' + data.title + '</h1> </div><main class="posts">';
         data.albums.forEach(function(el) {
@@ -58,7 +59,7 @@
             '<span class="year">' + el.year + '</span>' +
             '<img src="' + el.coverm + '" class="album-cover">' +
             '<p class="album-description">' + el.description + '</p>' +
-            '<a href="' + el.file + '" class="download-button">РЎРєР°С‡Р°С‚Рё Р°Р»СЊР±РѕРј</a>' +
+            '<a href="' + el.file + '" class="download-button">Скачати альбом</a>' +
             '</div>';
         });
         template += '</main>';
@@ -67,7 +68,7 @@
     },
     video: {
       title: 'video',
-      titleUk: 'Р’С–РґРµРѕ',
+      titleUk: 'Відео',
       template: function(data) {
         var template = '<div class="conc"><h1>' + data.title + '</h1> </div><main class="posts">';
         data.videos.forEach(function(el) {
@@ -84,15 +85,15 @@
     },
     contacts: {
       title: 'contacts',
-      titleUk: 'РљРѕРЅС‚Р°РєС‚Рё',
+      titleUk: 'Контакти',
       template: function() {
         var template = '<div class="conc">' +
-          '<h1>РљРѕРЅС‚Р°РєС‚Рё</h1>' +
+          '<h1>Контакти</h1>' +
           '</div>' +
           '<main class="posts"><main class="posts">' +
-          '<h2>Р— РїРёС‚Р°РЅСЊ СЃРїС–РІРїСЂР°С†С–:</h2>' +
+          '<h2>З питань співпраці:</h2>' +
           '<p class="contact__par">' +
-          '<strong>Р®СЂР° РђРїРµР»СЊСЃРёРЅ</strong>' +
+          '<strong>Юра Апельсин</strong>' +
           '<br>+38 (093) 80-00-074' +
           '<br>+38 (067) 97-30-100' +
           '<br>+38 (050) 18-63-506' +
@@ -109,7 +110,7 @@
     news: {
       title: 'news',
       template: function(data) {
-        var template = '<h2 class="sideHead">РќРѕРІРёРЅРё</h2>';
+        var template = '<h2 class="sideHead">Новини</h2>';
         data.forEach(function(el) {
           template += '<div class="single-news-block">' +
             '<img src="' + el.image + '" alt="' + el.title + '" class="news-img">' +
@@ -122,7 +123,7 @@
     '404': {
       title: '404',
       template: function() {
-        var template = '<div class="conc"><h1>РџРѕРјРёР»РєР°</h1> </div><main class="posts"><h2>404: cС‚РѕСЂС–РЅРєСѓ РЅРµ Р·РЅР°Р№РґРµРЅРѕ.</h2></main>';
+        var template = '<div class="conc"><h1>Помилка</h1> </div><main class="posts"><h2>404: cторінку не знайдено.</h2></main>';
         return template;
       }
     },
@@ -204,6 +205,7 @@
         content.innerHTML = htmlString;
         content.appendChild(aside);
         content.appendChild(clearfix);
+        nolinkAlert();
       });
     }
 
@@ -229,13 +231,12 @@
   init();
 
   function nolinkAlert() {
-    var links = document.querySelector('a[href="nolink"]');
-    debugger;
-    Array.prototype.forEach.call('links', function(nolink) {
+    var links = document.getElementsByClassName('nolink');
+    Array.prototype.forEach.call(links, function(nolink) {
       nolink.addEventListener('click', function(e) {
         e.preventDefault();
         var alert = document.createElement('div');
-        var t = document.createTextNode('РќР°Р¶Р°Р»СЊ С‰Рµ РЅРµРјР°С” РїРѕСЃРёР»Р°РЅРЅСЏ');
+        var t = document.createTextNode('Нажаль ще немає посилання');
 
         alert.className = 'nolink-alert';
         alert.appendChild(t);
@@ -243,7 +244,7 @@
         document.body.appendChild(alert);
         setTimeout(function() {
           document.body.removeChild(alert);
-        }, 400);
+        }, 2000);
       });
     });
   }

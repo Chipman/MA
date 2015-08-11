@@ -1,17 +1,42 @@
 [
+	{
+        "title": "Радіосингл &#171;Immigrant Song&#187;",
+        "image": "../img/news/immigrant.jpg",
+        "link": "http://www.fdr.com.ua/news_item.php?id=29167"
+    },
+    {
+        "title": "Буковинська хвиля - &#171;Механічний Апельсин&#187; (повна програма).",
+        "image": "../img/news/hvylia.jpg",
+        "link": "#video"
+    },
+    {
+        "title": "Відеокліп: &#171;Мене впізнають по наколках&#187;",
+        "image": "../img/news/poNakolkah.jpg",
+        "link": "#video"
+    },
     {
         "title": "Радіосингл &#171;Я Вибрав Шлях&#187;",
-        "image": "img/news/naked.jpg",
-        "link": "http://www.fdr.com.ua/premiera.php"
+        "image": "../img/news/naked.jpg",
+        "link": "http://www.fdr.com.ua/news_item.php?id=29121"
+    },
+    {
+        "title": "Відеокліп: Алєся Давидова і Юра (&#171;Механічний Апельсин&#187;) &#171;Літай&#187;",
+        "image": "../img/news/litaj1.jpg",
+        "link": "#video"
+    },
+    {
+        "title": "Відеокліп: &#171;Східний Фронт&#187; (Наша рідна земля)",
+        "image": "../img/news/front.jpg",
+        "link": "#video"
     },
     {
         "title": "Радіосингл: Механічний Апельсин та Алеся Давидова - &#171;Літай!&#187;",
-        "image": "img/news/litaj.jpg",
+        "image": "../img/news/litaj.jpg",
         "link": "http://www.fdr.com.ua/news_item.php?id=29124"
     },
     {
         "title": "Новий альбом &#171;NAKED&#187;",
-        "image": "img/news/naked.jpg",
+        "image": "../img/news/naked.jpg",
         "link": "#music"
     }
 ]

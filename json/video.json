@@ -1,20 +1,26 @@
 {
   "title": "Відео",
-  "videos": [{
-    "title": "Буковинська хвиля - «Механічний Апельсин» (повна програма).",
-    "src": "//www.youtube.com/embed/PTDbTVon6FU",
-    "id": "hvylia"
-  }, {
-    "title": "Механічний Апельсин - Мене впізнають по наколках",
-    "src": "//www.youtube.com/embed/jYM5diV3toU",
-    "id": "ponakolkah"
-  }, {
-    "title": "Механічний Апельсин - Наша рідна земля (Східний фронт)",
-    "src": "//www.youtube.com/embed/Vg0FvKFOJmk",
-    "id": "front"
-  }, {
-    "title": "Юра Апельсин та Алєся Давидова - Літай",
-    "src": "//www.youtube.com/embed/8x9pAQ20RqA",
-    "id": "litaj"
-  }]
+  "videos": [
+    {
+        "title": "Буковинська хвиля - &#171;Механічний Апельсин&#187; (повна програма).",
+        "src": "//www.youtube.com/embed/PTDbTVon6FU",
+        "id": "hvylia"
+    },
+    {
+        "title": "Механічний Апельсин - Мене впізнають по наколках",
+        "src": "//www.youtube.com/embed/jYM5diV3toU",
+        "id": "ponakolkah"
+    },
+    {
+        "title": "Механічний Апельсин - Східний Фронт (Наша рідна земля)",
+        "src": "//www.youtube.com/embed/Vg0FvKFOJmk",
+        "id": "front"
+    },
+    {
+        "title": "Юра Апельсин та Алєся Давидова - Літай",
+        "src": "//www.youtube.com/embed/8x9pAQ20RqA",
+        "id": "litaj"
+    }
+]
+
 }

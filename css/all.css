@@ -80,20 +80,19 @@ img {
 .nolink-alert {
   display: block;
   position: fixed;
-  top: 35%;
-  left: 35%;
+  top: calc((100% - 100px) / 2);
+  left: calc((100% - 300px) / 2);
   width: 300px;
   height: 100px;
   background: #910808;
   background-clip: padding-box;
   border-radius: 10px;
   border: 20px solid rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index: 5;
   color: #fff;
   text-align: center;
   font-size: 1.5em;
   padding-top: 8px;
-  opacity: 0;
 }
 
 /************************ CONTENT*********************/
@@ -206,10 +205,6 @@ img {
   .news-img {
     width: 76px;
   }
-  .nolink-alert {
-    top: 30%;
-    left: 30%;
-  }
 }
 @media only screen and (max-width: 701px) {
   .main-nav {
@@ -221,25 +216,6 @@ img {
   }
   #mainFooter p {
     text-align: center;
-  }
-  .nolink-alert {
-    top: 30%;
-    left: 25%;
-  }
-}
-@media only screen and (max-width: 561px) {
-  .nolink-alert {
-    left: 20%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .nolink-alert {
-    left: 10%;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .nolink-alert {
-    left: 0%;
   }
 }
 .single-date {
@@ -262,8 +238,8 @@ img {
 }
 .single-date-p {
   line-height: 170%;
-  margin: 0 0 3% 151px;
-  width: calc(100% - 151px);
+  margin: 0 0 3% 158px;
+  width: calc(100% - 158px);
 }
 .concert-date {
   font-size: 1.5em;
