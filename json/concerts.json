@@ -1,26 +1,29 @@
-[
-    {
-        "title": "The Gas Station",
-        "date": "30 січня, початок - 20:00.",
-        "image": "../img/posters/30-01.jpg",
-        "description": "Концерт повним складом у супроводі гурту <a href=\"http://www.vk.com/not_clean_head\" target=\"_blank\" style=\"text-decoration: underline\" title=\"спільнота Вконтакте\">&#171;Not Clean Head&#187;</a>. вул. Джерельна 20,  ВХІД ВІЛЬНИЙ!.<br>Резервація столиків за телефонами:<br>098 0658091<br>063 9414653",
-        "city": "Львів",
-        "link": "#"
-    },
-    {
-        "title": "Cadillac art-club",
-        "date": "18 січня",
-        "image": "../img/posters/18-01.jpg",
-        "description": "Затишний АРТ–КЛУБ «CADILLAC», який знаходиться в серці Києва, за адресою: вулиця Гоголівська, 2-а (м.Університет). Телефон для бронювання столиків та іншої інформації про заходи:<br>(066)-508-91-94.",
-        "city": "Київ",
-        "link": "#"
-    },
-    {
-        "title": "MuZa-bar Club & Restaurant",
-        "date": "17 січня, початок 20:00",
-        "image": "../img/posters/17-01.jpg",
-        "description": "вул. Октябрьская 19. ВХІД - 50грн. Попередній продаж - 40грн.<br>(098) 100-68-68",
-        "city": "Полтава",
-        "link": "http://vk.com/event84284484"
-    }    
-]
+{
+  "title": "Концерти",
+  "concerts": [
+      {
+          "title": "The Gas Station",
+          "date": "30 січня, початок - 20:00.",
+          "image": "../img/posters/30-01.jpg",
+          "description": "Концерт повним складом у супроводі гурту <a href=\"http://www.vk.com/not_clean_head\" target=\"_blank\" style=\"text-decoration: underline\" title=\"спільнота Вконтакте\">&#171;Not Clean Head&#187;</a>. вул. Джерельна 20,  ВХІД ВІЛЬНИЙ!.<br>Резервація столиків за телефонами:<br>098 0658091<br>063 9414653",
+          "city": "Львів",
+          "link": "nolink"
+      },
+      {
+          "title": "Cadillac art-club",
+          "date": "18 січня",
+          "image": "../img/posters/18-01.jpg",
+          "description": "Затишний АРТ–КЛУБ «CADILLAC», який знаходиться в серці Києва, за адресою: вулиця Гоголівська, 2-а (м.Університет). Телефон для бронювання столиків та іншої інформації про заходи:<br>(066)-508-91-94.",
+          "city": "Київ",
+          "link": "nolink"
+      },
+      {
+          "title": "MuZa-bar Club & Restaurant",
+          "date": "17 січня, початок 20:00",
+          "image": "../img/posters/17-01.jpg",
+          "description": "вул. Октябрьская 19. ВХІД - 50грн. Попередній продаж - 40грн.<br>(098) 100-68-68",
+          "city": "Полтава",
+          "link": "http://vk.com/event84284484"
+      }
+  ]
+}
